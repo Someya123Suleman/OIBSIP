@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+   <!-- <link rel="stylesheet" href="styles.css">-->
+   <style>
+    body{
+        font-family: Arial, sans-serif;
+        margin:0;
+        padding: 0;
+    }
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    header{
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+    header img{
+        border-radius: 50%;
+        width:150px;
+        height:150px;
+    }
+    header h1{
+        margin: 10px 0 0 0;
+    }
+    nav ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    nav ul li{
+        display:inline;
+        margin-right: 20px;
+
+    }
+    nav ul li a{
+        color:#fff;
+        text-decoration: none;
+    }
+    section{
+        padding:50px 0;
+    }
+    .project{
+        margin-top: 0;
+    }
+    .project h3{
+        margin-top:0;
+    }
+    @media(max-width:768px){
+        header img{
+            width:100px;
+            height:100px;
+        }
+    }
+            font-family:Arial, sans-serif;
+            background-image: url(white.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        div{
+            background-color: white;
+            border-radius: 10px;
+            padding: 50px;
+            width: 400px;
+        }
+        input[type="name"],input[type="email"],select,textarea,
+        input[type="phone number"],select,textarea,
+        input[type="subject"],select,textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+
+
+        }
+        input[type="send message"],select,textarea{
+            background-color: #fff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: none;
+            transition: 0.5s;
+            color: black;
+            cursor: pointer;
+        }
+        h2{
+            text-align: center;
+        }
+        input:focus,textarea:focus,select:focus{
+            background-color: antiquewhite;
+        }
+
+
+   </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="sumaiyasulemanss.jpg" height="400px" width="400px">
+            <h1>My portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about"></a></li>
+                    <li><a href="#project"></a></li>
+                    <li><a href="#contact"></a></li>
+                </ul>
+            </nav>
+        </header>
+        </div>
+        
+    <section id="about">
+        <div class="container">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio! I'm passionate about creating innovative web solutions.I have problem solving abilities,i know two languages and 
+            that is c and java </p>
+        </div>
+
+    </section>
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of project 1</p>
+                <p>Developing an aap to organize an event and make the interface user friendly.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>contact Me</h2>
+            <p>You can reach me at my email someyasuleman@gmail.com</p>
+        </div>
+    </section>
+    <div>
+        <form action="">
+            <h2>contact Me</h2>
+            <label for="name">Name:</label>
+            <input type="text" placeholder="First name last name" id="name"><br>
+            <label for="email">Email:</label>
+            <input type="email"id="email"><br>
+            <label for="phone number">Phone Number:</label>
+            <input type="number"><br>
+            <label for="subject">Subject:</label>
+            <input type="text" id="text"><br>
+            <label for="your message">Your Message:</label>
+            <input type="text"><br>
+
+            <input type="send message"value="SEND MESSAGE"><br>
+        </form>
+    </div>
+    
+</body>
+</html>
